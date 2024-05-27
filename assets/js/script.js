@@ -51,24 +51,20 @@ let data = [
       }]
     },
     options: {
+        plugins: {
+            legend: {
+              display: false
+            }
+          },
         scales: {
           x: { 
             grid: { 
               display: false 
             },
-            border: {
-              display: false
-            },
-            ticks: {
-              color: 'black' 
-            }
           },
           y: { 
             grid: { 
               display: false 
-            },
-            border: {
-              display: false
             },
             ticks: {
               display: false
