@@ -3,12 +3,12 @@
 
 /* variables */
 :root {
-    --SoftRed: hsl(10, 79%, 65%);
-    --Cyan: hsl(186, 34%, 60%);
+    --SoftRed: rgb(236, 119, 95);
+    --Cyan: rgb(118, 181, 188);
     --DarkBrown: hsl(25, 47%, 15%);
     --MediumBrown: hsl(28, 10%, 53%);
     --Cream: hsl(27, 66%, 92%);
-    --paleOrange: hsl(33, 100%, 98%);
+    --paleOrange: hsl(31, 86%, 94%);
     --largeSpacing: 2rem; 
     --smallSpacing: 1rem; 
     --largeBorderRadius: 25px;
@@ -46,7 +46,6 @@ h6 {
 p {
     text-wrap: pretty; 
     max-width: 75ch;
-    margin-bottom: 2rem;
     line-height: 1.5rem;
 }
 
@@ -87,4 +86,56 @@ body {
     border-radius: var(--largeBorderRadius);
 }
 
-.
+.text h1 {
+    margin-bottom: .5rem;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+}
+
+.spendingContainer {
+    background: white;
+    width: 40vw;
+    padding: var(--largeSpacing);
+    border-radius: var(--largeBorderRadius);
+    margin-top: var(--largeSpacing);
+}
+
+.textContent h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.totalContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total {
+    margin-top: var(--smallSpacing);
+}
+
+.total p {
+    color: var(--MediumBrown);
+}
+
+.amountTotal p {
+    color: black;
+    font-size: 2.5rem;
+    margin: var(--smallSpacing) 0;
+    font-weight: bold;
+}
+
+#percent {
+    color: black;
+    font-weight: bold;
+}
+
+.changePercent {
+    margin-top: var(--smallSpacing);
+    color: var(--MediumBrown);
+}
+
+

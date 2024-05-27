@@ -10,11 +10,12 @@
     <title>Expenses</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <script src="./assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
   </head>
 
   <body>
-    <div class="container">
-      <header class="balanceContainer">
+    <main class="container">
+      <section class="balanceContainer">
         <div class="text">
           <h1>My Balance</h1>
           <h2>$921.48</h2>
@@ -22,11 +23,25 @@
         <div class="logo">
           <img src="./assets/images/logo.svg" alt="Logo" />
         </div>
-      </header>
-      <main>spending del</main>
-    </div>
+      </section>
+
+      <section class="spendingContainer">
+        <div class="textContent">
+          <h2>Spending - Last 7 Days</h2>
+        </div>
+        <canvas class="graph"></canvas>
+
+        <div class="totalContainer">
+          <div class="total">
+            <p>Total This Week</p>
+            <p class="amountTotal"></p>
+          </div>
+          <div class="changePercent">
+            <p id="percent">+2.4%</p>
+            <p>From last week</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
-
-My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total this
-month $478.33 +2.4% from last month
