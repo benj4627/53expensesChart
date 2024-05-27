@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /* variables */
-::root {
+:root {
     --SoftRed: hsl(10, 79%, 65%);
     --Cyan: hsl(186, 34%, 60%);
     --DarkBrown: hsl(25, 47%, 15%);
@@ -64,3 +64,27 @@ input,
 form {
     font: inherit;
 }
+
+body {
+    background-color: var(--paleOrange);
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+/* header */
+.balanceContainer {
+    background: var(--SoftRed);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    padding: var(--largeSpacing);
+    border-radius: var(--largeBorderRadius);
+}
+
+.
